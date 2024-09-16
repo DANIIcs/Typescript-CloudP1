@@ -6,8 +6,8 @@ import { Proyecto1Stack } from '../lib/proyecto1-stack';
 const app = new cdk.App();
 new Proyecto1Stack(app, 'Proyecto1Stack', {
     env: {
-        account: process.env.CDK_DEFAULT_ACCOUNT || '298526054328',  // Tu cuenta IAM
-        region: process.env.CDK_DEFAULT_REGION || 'us-east-1'  // Región predeterminada
+        account: process.env.CDK_DEFAULT_ACCOUNT || '298526054328',
+        region: process.env.CDK_DEFAULT_REGION || 'us-east-1'
     }
 });
 

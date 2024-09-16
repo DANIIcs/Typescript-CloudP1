@@ -7,7 +7,7 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 export class Proyecto1Stack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
         const synthesizer = new cdk.DefaultStackSynthesizer({
-            fileAssetsBucketName: "proyecto-cloud",  // Tu bucket
+            fileAssetsBucketName: "proyecto-cloud",
             bucketPrefix: "",
             cloudFormationExecutionRole: "arn:aws:iam::298526054328:role/LabRole",  // Tu IAM Role
             deployRoleArn: "arn:aws:iam::298526054328:role/LabRole",
@@ -35,7 +35,7 @@ export class Proyecto1Stack extends cdk.Stack {
 
         // Crear una instancia con los parámetros personalizados
         const instance = new ec2.Instance(this, "WebServerProyecto1", {
-            instanceType: new ec2.InstanceType("t3.micro"),  // Cambié t2.micro a t3.micro para mejorar el rendimiento
+            instanceType: new ec2.InstanceType("t3.micro"),
             machineImage: ubuntuAmi,
             vpc: vpc,
             role: instanceRole
