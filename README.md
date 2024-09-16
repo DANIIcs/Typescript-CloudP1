@@ -10,6 +10,13 @@ Guadamos las credenciales en el directorio de .aws con el siguiente comando
    notepad $env:USERPROFILE.aws\credentials
    ```
 
+Ademas creamos otro archivo en el mismo directorio de .aws llamado config y que tenga el siguiente codigo
+
+   ```bash
+   [default]
+   region = us-east-1
+   ```
+
 Creamos un nuveo bucket 
 ![Creación del bucket](./images/1.png)
 
