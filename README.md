@@ -1,15 +1,5 @@
 # Proyecto 1 de Cloud computing (typescript)
 
-## Requisitos previos
-
-Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
-
-1. **AWS CLI**: Configurado con tus credenciales de acceso.
-2. **AWS CDK**: Instalar usando el siguiente comando:
-
-   ```bash
-   npm install -g aws-cdk
-
 ## Pasos a seguir:
 inicializamos el aws
 
