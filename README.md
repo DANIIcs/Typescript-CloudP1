@@ -7,6 +7,7 @@ guadamos las credenciales en el directorio de .aws con el siguiente comando
 
    ```bash
    notepad $env:USERPROFILE.aws\credentials
+   ```
 
 creamos un nuveo bucket 
 ![Creación del bucket](./images/1.png)
@@ -23,6 +24,7 @@ Creamos un archivo en vs de typescript con los sigueintes comandos
    npm install -g aws-cdk
 
    cdk init app --language typescript
+   ```
 
 Ajustamos el codigo de tal manera que utilice las credenciales y tenaga los roles establecudos para que pueda abirir los puertos 8080 y 8081
 
@@ -32,6 +34,7 @@ Usamos los siguietes comando para deployar
    aws ssm put-parameter --name "/cdk-bootstrap/hnb659fds/version" --type "String" --value "15" --overwrite
 
    cdk deploy
+   ```
 
 Comporbamos que se haya deployado una nueva instancia en nuestro ec2
 ![](./images/3.png)
