@@ -1,20 +1,21 @@
 # Proyecto 1 de Cloud computing (typescript)
 
 ## Pasos a seguir:
-inicializamos el aws
 
-guadamos las credenciales en el directorio de .aws con el siguiente comando 
+Inicializamos el aws
+
+Guadamos las credenciales en el directorio de .aws con el siguiente comando 
 
    ```bash
    notepad $env:USERPROFILE.aws\credentials
    ```
 
-creamos un nuveo bucket 
+Creamos un nuveo bucket 
 ![Creación del bucket](./images/1.png)
 
-buscamos nuestra id del AMI
+Buscamos nuestra id del AMI
 
-buscamos tambien la id del panel VPC
+Buscamos tambien la id del panel VPC
 ![](./images/2.png)
 
 
